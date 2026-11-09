@@ -680,8 +680,8 @@
         "phase-3"
       ],
       "priority": "Should",
-      "status": "Testing",
-      "completed": false,
+      "status": "Done",
+      "completed": true,
       "createdAt": 1794226524050,
       "order": 19000,
       "subtasks": [
@@ -720,7 +720,7 @@
         "phase-3"
       ],
       "priority": "Must",
-      "status": "Todo",
+      "status": "Testing",
       "completed": false,
       "createdAt": 1794226524050,
       "order": 20000,
@@ -728,27 +728,27 @@
         {
           "id": "T-20-d1",
           "text": "DoD: Compared with 1a and 1b at 390, 768, 1024 and 1440px",
-          "completed": false
+          "completed": true
         },
         {
           "id": "T-20-d2",
           "text": "DoD: No horizontal scroll at any width",
-          "completed": false
+          "completed": true
         },
         {
           "id": "T-20-d3",
           "text": "DoD: Differences are fixed or logged as new tasks",
-          "completed": false
+          "completed": true
         },
         {
           "id": "T-20-d4",
           "text": "DoD: Production build is served and checked",
-          "completed": false
+          "completed": true
         },
         {
           "id": "T-20-d5",
           "text": "DoD: npm run build compiles with no errors or warnings",
-          "completed": false
+          "completed": true
         }
       ]
     },
@@ -782,6 +782,36 @@
         },
         {
           "id": "T-21-d4",
+          "text": "DoD: npm run build compiles with no errors or warnings",
+          "completed": false
+        }
+      ]
+    },
+    {
+      "id": "T-22",
+      "text": "T-22 · Light footer logo",
+      "description": "Goal: use a light logo on the ink footer, as the design calls for. The regular logo has low contrast there. Blocked until the client supplies logo-light.svg.\nFiles: src/assets/logo-light.svg, src/components/logo.js, src/sections/footer.js",
+      "tags": [
+        "phase-3"
+      ],
+      "priority": "Should",
+      "status": "Todo",
+      "completed": false,
+      "createdAt": 1794226524050,
+      "order": 22000,
+      "subtasks": [
+        {
+          "id": "T-22-d1",
+          "text": "DoD: Footer shows logo-light.svg on the ink background",
+          "completed": false
+        },
+        {
+          "id": "T-22-d2",
+          "text": "DoD: Header still uses logo.svg",
+          "completed": false
+        },
+        {
+          "id": "T-22-d3",
           "text": "DoD: npm run build compiles with no errors or warnings",
           "completed": false
         }
