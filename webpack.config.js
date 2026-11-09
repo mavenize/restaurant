@@ -25,7 +25,18 @@ module.exports = {
       },
       {
         test: /\.(svg|png|jpe?g|webp|avif|woff2)$/i,
+        exclude: /assets[\\/]favicons[\\/]/,
         type: "asset/resource",
+      },
+      {
+        test: /assets[\\/]favicon\.ico$/,
+        type: "asset/resource",
+        generator: { filename: "[name][ext]" },
+      },
+      {
+        test: /assets[\\/]favicons[\\/]/,
+        type: "asset/resource",
+        generator: { filename: "favicons/[name][ext]" },
       },
     ],
   },

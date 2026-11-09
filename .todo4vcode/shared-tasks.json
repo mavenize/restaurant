@@ -760,8 +760,8 @@
         "phase-3"
       ],
       "priority": "Should",
-      "status": "Testing",
-      "completed": false,
+      "status": "Done",
+      "completed": true,
       "createdAt": 1794226524050,
       "order": 21000,
       "subtasks": [
@@ -825,7 +825,7 @@
         "phase-3"
       ],
       "priority": "Should",
-      "status": "Todo",
+      "status": "Testing",
       "completed": false,
       "createdAt": 1794226524050,
       "order": 23000,
@@ -833,17 +833,17 @@
         {
           "id": "T-23-d1",
           "text": "DoD: Icon links match the live site and every file loads from the production build",
-          "completed": false
+          "completed": true
         },
         {
           "id": "T-23-d2",
           "text": "DoD: /favicon.ico resolves",
-          "completed": false
+          "completed": true
         },
         {
           "id": "T-23-d3",
           "text": "DoD: npm run build compiles with no errors or warnings",
-          "completed": false
+          "completed": true
         }
       ]
     }
