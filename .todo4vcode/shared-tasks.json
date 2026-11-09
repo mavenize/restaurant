@@ -510,8 +510,8 @@
         "phase-2"
       ],
       "priority": "Must",
-      "status": "Testing",
-      "completed": false,
+      "status": "Done",
+      "completed": true,
       "createdAt": 1794226524050,
       "order": 14000,
       "subtasks": [
@@ -540,7 +540,7 @@
         "phase-2"
       ],
       "priority": "Must",
-      "status": "Todo",
+      "status": "Testing",
       "completed": false,
       "createdAt": 1794226524050,
       "order": 15000,
@@ -548,27 +548,27 @@
         {
           "id": "T-15-d1",
           "text": "DoD: Hours come from the shared data and match the card",
-          "completed": false
+          "completed": true
         },
         {
           "id": "T-15-d2",
           "text": "DoD: Map iframe is 480px on desktop and 260px on mobile",
-          "completed": false
+          "completed": true
         },
         {
           "id": "T-15-d3",
           "text": "DoD: Map has loading=lazy and the specified title",
-          "completed": false
+          "completed": true
         },
         {
           "id": "T-15-d4",
           "text": "DoD: Hours column is hidden on mobile as drawn in 1b",
-          "completed": false
+          "completed": true
         },
         {
           "id": "T-15-d5",
           "text": "DoD: npm run build compiles with no errors or warnings",
-          "completed": false
+          "completed": true
         }
       ]
     },

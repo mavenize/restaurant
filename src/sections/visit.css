@@ -1,0 +1,55 @@
+.visit__inner {
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+  gap: 56px;
+  padding-block: 96px;
+}
+
+.visit__info {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.visit__heading {
+  font-size: 48px;
+  line-height: normal;
+}
+
+.visit__address {
+  padding-top: 16px;
+  border-top: 1px solid var(--ink);
+  font-size: 18px;
+  line-height: normal;
+}
+
+.visit__booking {
+  align-self: flex-start;
+}
+
+.visit__map {
+  width: 100%;
+  height: 480px;
+  border: 0;
+}
+
+@media (max-width: 1023px) {
+  .visit__inner {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 767px) {
+  .visit__inner {
+    gap: 0;
+    padding: 0;
+  }
+
+  .visit__info {
+    display: none;
+  }
+
+  .visit__map {
+    height: 260px;
+  }
+}
