@@ -165,8 +165,8 @@
         "phase-1"
       ],
       "priority": "Must",
-      "status": "Testing",
-      "completed": false,
+      "status": "Done",
+      "completed": true,
       "createdAt": 1794226524050,
       "order": 5000,
       "subtasks": [
@@ -205,7 +205,7 @@
         "phase-1"
       ],
       "priority": "Must",
-      "status": "Todo",
+      "status": "Testing",
       "completed": false,
       "createdAt": 1794226524050,
       "order": 6000,
@@ -213,27 +213,27 @@
         {
           "id": "T-06-d1",
           "text": "DoD: All copy is verbatim from the design",
-          "completed": false
+          "completed": true
         },
         {
           "id": "T-06-d2",
           "text": "DoD: Hours are defined once",
-          "completed": false
+          "completed": true
         },
         {
           "id": "T-06-d3",
           "text": "DoD: Every link has a real URL, with HEM, OM OSS, PIZZA and VIN & ÖL looked up on the live site",
-          "completed": false
+          "completed": true
         },
         {
           "id": "T-06-d4",
           "text": "DoD: Booking URL matches the handoff",
-          "completed": false
+          "completed": true
         },
         {
           "id": "T-06-d5",
           "text": "DoD: npm run build compiles with no errors or warnings",
-          "completed": false
+          "completed": true
         }
       ]
     },
