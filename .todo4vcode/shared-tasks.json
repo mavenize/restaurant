@@ -855,8 +855,8 @@
         "phase-3"
       ],
       "priority": "Should",
-      "status": "Testing",
-      "completed": false,
+      "status": "Done",
+      "completed": true,
       "createdAt": 1794226524050,
       "order": 24000,
       "subtasks": [
@@ -877,6 +877,36 @@
         },
         {
           "id": "T-24-d4",
+          "text": "DoD: npm run build compiles with no errors or warnings",
+          "completed": true
+        }
+      ]
+    },
+    {
+      "id": "T-25",
+      "text": "T-25 · Project README",
+      "description": "Goal: a README covering setup, layout, deployment and image sources.\nFiles: README.md",
+      "tags": [
+        "phase-3"
+      ],
+      "priority": "Should",
+      "status": "Testing",
+      "completed": false,
+      "createdAt": 1794226524050,
+      "order": 25000,
+      "subtasks": [
+        {
+          "id": "T-25-d1",
+          "text": "DoD: README covers setup, project layout, deployment and image sources",
+          "completed": true
+        },
+        {
+          "id": "T-25-d2",
+          "text": "DoD: Commands in the README match package.json and how the repo deploys",
+          "completed": true
+        },
+        {
+          "id": "T-25-d3",
           "text": "DoD: npm run build compiles with no errors or warnings",
           "completed": true
         }

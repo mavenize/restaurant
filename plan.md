@@ -78,6 +78,7 @@ Every task also carries one implicit DoD item: `npm run build` compiles with no 
 | T-22 | Light footer logo | Should | `logo-light.svg` is a provisional recolour of `logo.svg` until the client supplies an official version. Footer shows it on the ink background. Header still uses `logo.svg`. |
 | T-23 | Favicons | Should | The live site's icon links and files. Every file loads from the production build, and `/favicon.ico` resolves. |
 | T-24 | New hero photo | Should | Hero shows the supplied facade photo as AVIF and WebP at 800w and its full 1225w. Old hero files removed. The hours card leaves the guests at the right-hand window visible at 1065px and wider. |
+| T-25 | Project README | Should | Covers setup, project layout, deployment and image sources. Commands match `package.json` and how the repo deploys. |
 
 ## Design gaps to confirm with the client (built as drawn until then)
 - On mobile the design has no Öppettider section and no way to reopen a dismissed hours card, so hours are gone for that browser session.
