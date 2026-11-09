@@ -405,8 +405,8 @@
         "phase-2"
       ],
       "priority": "Must",
-      "status": "Testing",
-      "completed": false,
+      "status": "Done",
+      "completed": true,
       "createdAt": 1794226524050,
       "order": 11000,
       "subtasks": [
@@ -445,7 +445,7 @@
         "phase-2"
       ],
       "priority": "Must",
-      "status": "Todo",
+      "status": "Testing",
       "completed": false,
       "createdAt": 1794226524050,
       "order": 12000,
@@ -453,22 +453,22 @@
         {
           "id": "T-12-d1",
           "text": "DoD: 5fr/7fr grid with a top border",
-          "completed": false
+          "completed": true
         },
         {
           "id": "T-12-d2",
           "text": "DoD: Paragraph is at most 640px wide",
-          "completed": false
+          "completed": true
         },
         {
           "id": "T-12-d3",
           "text": "DoD: Paragraph comes first on mobile",
-          "completed": false
+          "completed": true
         },
         {
           "id": "T-12-d4",
           "text": "DoD: npm run build compiles with no errors or warnings",
-          "completed": false
+          "completed": true
         }
       ]
     },
