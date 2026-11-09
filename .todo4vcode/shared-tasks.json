@@ -620,8 +620,8 @@
         "phase-2"
       ],
       "priority": "Must",
-      "status": "Testing",
-      "completed": false,
+      "status": "Done",
+      "completed": true,
       "createdAt": 1794226524050,
       "order": 17000,
       "subtasks": [
@@ -650,7 +650,7 @@
         "phase-3"
       ],
       "priority": "Should",
-      "status": "Todo",
+      "status": "Testing",
       "completed": false,
       "createdAt": 1794226524050,
       "order": 18000,
@@ -658,17 +658,17 @@
         {
           "id": "T-18-d1",
           "text": "DoD: Title, description, canonical, Open Graph and Twitter tags are copied from the live site",
-          "completed": false
+          "completed": true
         },
         {
           "id": "T-18-d2",
           "text": "DoD: html has lang=sv",
-          "completed": false
+          "completed": true
         },
         {
           "id": "T-18-d3",
           "text": "DoD: npm run build compiles with no errors or warnings",
-          "completed": false
+          "completed": true
         }
       ]
     },
