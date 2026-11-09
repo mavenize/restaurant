@@ -290,8 +290,8 @@
         "phase-2"
       ],
       "priority": "Must",
-      "status": "Testing",
-      "completed": false,
+      "status": "Done",
+      "completed": true,
       "createdAt": 1794226524050,
       "order": 8000,
       "subtasks": [
@@ -320,7 +320,7 @@
         "phase-2"
       ],
       "priority": "Must",
-      "status": "Todo",
+      "status": "Testing",
       "completed": false,
       "createdAt": 1794226524050,
       "order": 9000,
@@ -328,32 +328,32 @@
         {
           "id": "T-09-d1",
           "text": "DoD: Sticky header with 120×36 logo and 44px toggle",
-          "completed": false
+          "completed": true
         },
         {
           "id": "T-09-d2",
           "text": "DoD: Toggle switches ☰/✕ and updates aria-expanded and aria-controls",
-          "completed": false
+          "completed": true
         },
         {
           "id": "T-09-d3",
           "text": "DoD: Full-screen ink overlay with Young Serif 32px links",
-          "completed": false
+          "completed": true
         },
         {
           "id": "T-09-d4",
           "text": "DoD: Esc closes the menu",
-          "completed": false
+          "completed": true
         },
         {
           "id": "T-09-d5",
           "text": "DoD: Body scroll is locked while open",
-          "completed": false
+          "completed": true
         },
         {
           "id": "T-09-d6",
           "text": "DoD: npm run build compiles with no errors or warnings",
-          "completed": false
+          "completed": true
         }
       ]
     },

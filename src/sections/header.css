@@ -46,6 +46,10 @@
   text-decoration: none;
 }
 
+.header__toggle {
+  display: none;
+}
+
 @media (min-width: 768px) and (max-width: 1023px) {
   .header__inner {
     flex-wrap: wrap;
@@ -59,8 +63,31 @@
 }
 
 @media (max-width: 767px) {
+  .header {
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    background: var(--paper);
+  }
+
+  .header__inner {
+    padding-block: 16px;
+  }
+
   .header__nav,
   .header__actions {
     display: none;
+  }
+
+  .header__toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border: 1px solid var(--ink);
+    border-radius: 50%;
+    font-size: 15px;
+    line-height: normal;
   }
 }

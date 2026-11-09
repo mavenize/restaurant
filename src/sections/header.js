@@ -3,6 +3,7 @@ import { createBookingButton } from "../components/button.js";
 import { createLogo } from "../components/logo.js";
 import { content } from "../data/content.js";
 import { createEl } from "../utils/dom.js";
+import { createMobileMenu } from "./mobileMenu.js";
 
 function createNav() {
   const nav = createEl("nav", { className: "header__nav" });
@@ -47,11 +48,17 @@ function createActions() {
 export function createHeader() {
   const header = createEl("header", { className: "header" });
   const inner = createEl("div", { className: "container header__inner" });
+  const menuToggle = createEl("button", {
+    className: "header__toggle",
+    attrs: { type: "button", "aria-label": content.mobileMenu.toggleLabel },
+  });
 
   inner.appendChild(createLogo());
   inner.appendChild(createNav());
   inner.appendChild(createActions());
+  inner.appendChild(menuToggle);
   header.appendChild(inner);
+  header.appendChild(createMobileMenu(menuToggle));
 
   return header;
 }
