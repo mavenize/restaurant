@@ -540,8 +540,8 @@
         "phase-2"
       ],
       "priority": "Must",
-      "status": "Testing",
-      "completed": false,
+      "status": "Done",
+      "completed": true,
       "createdAt": 1794226524050,
       "order": 15000,
       "subtasks": [
@@ -580,7 +580,7 @@
         "phase-2"
       ],
       "priority": "Must",
-      "status": "Todo",
+      "status": "Testing",
       "completed": false,
       "createdAt": 1794226524050,
       "order": 16000,
@@ -588,27 +588,27 @@
         {
           "id": "T-16-d1",
           "text": "DoD: Ink background",
-          "completed": false
+          "completed": true
         },
         {
           "id": "T-16-d2",
           "text": "DoD: Nav is 3 columns on desktop and 2 on tablet and mobile",
-          "completed": false
+          "completed": true
         },
         {
           "id": "T-16-d3",
           "text": "DoD: Copyright row has the mailto link",
-          "completed": false
+          "completed": true
         },
         {
           "id": "T-16-d4",
           "text": "DoD: Logo and Instagram show on desktop only, as drawn",
-          "completed": false
+          "completed": true
         },
         {
           "id": "T-16-d5",
           "text": "DoD: npm run build compiles with no errors or warnings",
-          "completed": false
+          "completed": true
         }
       ]
     },
