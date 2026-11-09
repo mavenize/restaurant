@@ -10,8 +10,8 @@
         "phase-0"
       ],
       "priority": "Must",
-      "status": "Testing",
-      "completed": false,
+      "status": "Done",
+      "completed": true,
       "createdAt": 1794226524050,
       "order": 1000,
       "subtasks": [
@@ -23,7 +23,7 @@
         {
           "id": "T-01-d2",
           "text": "DoD: CSS is applied through the bundle (page background is cream in a browser)",
-          "completed": false
+          "completed": true
         },
         {
           "id": "T-01-d3",
@@ -45,8 +45,8 @@
         "phase-0"
       ],
       "priority": "Must",
-      "status": "Testing",
-      "completed": false,
+      "status": "Done",
+      "completed": true,
       "createdAt": 1794226524050,
       "order": 2000,
       "subtasks": [
@@ -63,12 +63,12 @@
         {
           "id": "T-02-d3",
           "text": "DoD: Every task appears in the extension with a Definition of Done checklist",
-          "completed": false
+          "completed": true
         },
         {
           "id": "T-02-d4",
           "text": "DoD: Handoff folder is committed as reference",
-          "completed": false
+          "completed": true
         },
         {
           "id": "T-02-d5",
@@ -85,7 +85,7 @@
         "phase-1"
       ],
       "priority": "Must",
-      "status": "Todo",
+      "status": "Testing",
       "completed": false,
       "createdAt": 1794226524050,
       "order": 3000,
@@ -93,27 +93,27 @@
         {
           "id": "T-03-d1",
           "text": "DoD: createEl works for class, text and attributes",
-          "completed": false
+          "completed": true
         },
         {
           "id": "T-03-d2",
           "text": "DoD: index.js appends empty section modules in design order",
-          "completed": false
+          "completed": true
         },
         {
           "id": "T-03-d3",
           "text": "DoD: Body of template.html contains only #content",
-          "completed": false
+          "completed": true
         },
         {
           "id": "T-03-d4",
           "text": "DoD: No innerHTML or insertAdjacentHTML in src/",
-          "completed": false
+          "completed": true
         },
         {
           "id": "T-03-d5",
           "text": "DoD: npm run build compiles with no errors or warnings",
-          "completed": false
+          "completed": true
         }
       ]
     },
