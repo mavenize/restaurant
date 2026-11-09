@@ -365,8 +365,8 @@
         "phase-2"
       ],
       "priority": "Must",
-      "status": "Testing",
-      "completed": false,
+      "status": "Done",
+      "completed": true,
       "createdAt": 1794226524050,
       "order": 10000,
       "subtasks": [
@@ -405,7 +405,7 @@
         "phase-2"
       ],
       "priority": "Must",
-      "status": "Todo",
+      "status": "Testing",
       "completed": false,
       "createdAt": 1794226524050,
       "order": 11000,
@@ -413,27 +413,27 @@
         {
           "id": "T-11-d1",
           "text": "DoD: Overlaps the photo by -32px/-40px on desktop and sits in flow on mobile",
-          "completed": false
+          "completed": true
         },
         {
           "id": "T-11-d2",
           "text": "DoD: Close sets sessionStorage.hoursDismissed to 1 and the card stays hidden on reload",
-          "completed": false
+          "completed": true
         },
         {
           "id": "T-11-d3",
           "text": "DoD: ÖPPETTIDER in the nav toggles it back",
-          "completed": false
+          "completed": true
         },
         {
           "id": "T-11-d4",
           "text": "DoD: Close target is 32px desktop and 44px mobile, labelled Stäng",
-          "completed": false
+          "completed": true
         },
         {
           "id": "T-11-d5",
           "text": "DoD: npm run build compiles with no errors or warnings",
-          "completed": false
+          "completed": true
         }
       ]
     },

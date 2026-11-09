@@ -3,6 +3,7 @@ import { createBookingButton } from "../components/button.js";
 import { createLogo } from "../components/logo.js";
 import { content } from "../data/content.js";
 import { createEl } from "../utils/dom.js";
+import { toggleHoursCard } from "./hoursCard.js";
 import { createMobileMenu } from "./mobileMenu.js";
 
 function createNav() {
@@ -18,13 +19,14 @@ function createNav() {
     );
   });
 
-  nav.appendChild(
-    createEl("button", {
-      className: "header__link",
-      text: content.header.hoursToggle,
-      attrs: { type: "button" },
-    }),
-  );
+  const hoursToggle = createEl("button", {
+    className: "header__link",
+    text: content.header.hoursToggle,
+    attrs: { type: "button" },
+  });
+
+  hoursToggle.addEventListener("click", toggleHoursCard);
+  nav.appendChild(hoursToggle);
 
   return nav;
 }

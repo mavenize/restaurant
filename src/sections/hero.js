@@ -3,6 +3,7 @@ import { createBookingButton, createButton } from "../components/button.js";
 import { createImagePlaceholder } from "../components/imagePlaceholder.js";
 import { content } from "../data/content.js";
 import { createEl } from "../utils/dom.js";
+import { createHoursCard } from "./hoursCard.js";
 
 function createHeading() {
   const { eyebrow, display, subline } = content.hero;
@@ -51,6 +52,7 @@ export function createHero() {
       className: "hero__photo",
     }),
   );
+  media.appendChild(createHoursCard());
 
   inner.appendChild(text);
   inner.appendChild(media);
