@@ -85,8 +85,8 @@
         "phase-1"
       ],
       "priority": "Must",
-      "status": "Testing",
-      "completed": false,
+      "status": "Done",
+      "completed": true,
       "createdAt": 1794226524050,
       "order": 3000,
       "subtasks": [
@@ -125,7 +125,7 @@
         "phase-1"
       ],
       "priority": "Must",
-      "status": "Todo",
+      "status": "Testing",
       "completed": false,
       "createdAt": 1794226524050,
       "order": 4000,
@@ -133,27 +133,27 @@
         {
           "id": "T-04-d1",
           "text": "DoD: All handoff colours exist as tokens in tokens.css",
-          "completed": false
+          "completed": true
         },
         {
           "id": "T-04-d2",
           "text": "DoD: Reset and body type are applied",
-          "completed": false
+          "completed": true
         },
         {
           "id": "T-04-d3",
           "text": "DoD: Container is max 1440px with 64px desktop and 20px mobile side padding",
-          "completed": false
+          "completed": true
         },
         {
           "id": "T-04-d4",
           "text": "DoD: Focus-visible is a 2px ink outline, offset 3px",
-          "completed": false
+          "completed": true
         },
         {
           "id": "T-04-d5",
           "text": "DoD: npm run build compiles with no errors or warnings",
-          "completed": false
+          "completed": true
         }
       ]
     },
@@ -698,6 +698,11 @@
         {
           "id": "T-19-d3",
           "text": "DoD: Every icon-only control has a label",
+          "completed": false
+        },
+        {
+          "id": "T-19-d5",
+          "text": "DoD: Focus outline is visible on ink and terracotta backgrounds, where the ink outline from the spec disappears",
           "completed": false
         },
         {

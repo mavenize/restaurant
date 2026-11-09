@@ -1,0 +1,24 @@
+:root {
+  --paper: #f6f1e7;
+  --ink: #231d18;
+  --terracotta: #a8432a;
+  --line: #e2d9c8;
+  --line-dark: #4a423a;
+  --muted: #6b6358;
+  --muted-light: #c9bda7;
+
+  --font-display: "Young Serif", Georgia, serif;
+  --font-body: "Instrument Sans", Helvetica, sans-serif;
+  --font-mono: "IBM Plex Mono", monospace;
+
+  --container-max: 1440px;
+  --gutter: 64px;
+  --body-size: 18px;
+}
+
+@media (max-width: 767px) {
+  :root {
+    --gutter: 20px;
+    --body-size: 17px;
+  }
+}
