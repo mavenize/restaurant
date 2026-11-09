@@ -14,6 +14,8 @@
   --placeholder-terracotta-stripe-b: #ad4b32;
   --placeholder-terracotta-border: #d98a73;
 
+  --shadow-booking: 0 6px 20px rgba(35, 29, 24, 0.25);
+
   --font-display: "Young Serif", Georgia, serif;
   --font-body: "Instrument Sans", Helvetica, sans-serif;
   --font-mono: "IBM Plex Mono", monospace;

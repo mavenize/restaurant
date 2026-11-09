@@ -13,6 +13,7 @@ import { createStickyBooking } from "./sections/stickyBooking.js";
 
 const content = document.getElementById("content");
 const main = createEl("main");
+const footer = createFooter();
 
 main.appendChild(createHero());
 main.appendChild(createIntro());
@@ -22,5 +23,5 @@ main.appendChild(createVisit());
 
 content.appendChild(createHeader());
 content.appendChild(main);
-content.appendChild(createFooter());
-content.appendChild(createStickyBooking());
+content.appendChild(footer);
+content.appendChild(createStickyBooking(footer));

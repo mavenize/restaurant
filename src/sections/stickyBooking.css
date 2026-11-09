@@ -1,0 +1,26 @@
+.sticky-booking {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .sticky-booking {
+    position: fixed;
+    right: 0;
+    bottom: 16px;
+    left: 0;
+    z-index: 2;
+    display: block;
+    padding-inline: var(--gutter);
+  }
+
+  .sticky-booking[hidden] {
+    display: none;
+  }
+
+  .button.sticky-booking__button {
+    display: flex;
+    height: 56px;
+    padding: 0;
+    box-shadow: var(--shadow-booking);
+  }
+}
