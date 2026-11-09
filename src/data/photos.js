@@ -1,7 +1,7 @@
 import hero800Avif from "../assets/images/hero-800.avif";
 import hero800Webp from "../assets/images/hero-800.webp";
-import hero852Avif from "../assets/images/hero-852.avif";
-import hero852Webp from "../assets/images/hero-852.webp";
+import hero1225Avif from "../assets/images/hero-1225.avif";
+import hero1225Webp from "../assets/images/hero-1225.webp";
 import pasta800Avif from "../assets/images/pasta-800.avif";
 import pasta800Webp from "../assets/images/pasta-800.webp";
 import pasta1600Avif from "../assets/images/pasta-1600.avif";
@@ -20,11 +20,11 @@ function srcset(small, smallWidth, large, largeWidth) {
 
 export const photos = {
   hero: {
-    avif: srcset(hero800Avif, 800, hero852Avif, 852),
-    webp: srcset(hero800Webp, 800, hero852Webp, 852),
+    avif: srcset(hero800Avif, 800, hero1225Avif, 1225),
+    webp: srcset(hero800Webp, 800, hero1225Webp, 1225),
     fallback: hero800Webp,
-    width: 852,
-    height: 852,
+    width: 1225,
+    height: 1200,
     sizes: `${COLUMN_SIZES}, calc(100vw - 40px)`,
   },
   pasta: {

@@ -795,8 +795,8 @@
         "phase-3"
       ],
       "priority": "Should",
-      "status": "Testing",
-      "completed": false,
+      "status": "Done",
+      "completed": true,
       "createdAt": 1794226524050,
       "order": 22000,
       "subtasks": [
@@ -842,6 +842,41 @@
         },
         {
           "id": "T-23-d3",
+          "text": "DoD: npm run build compiles with no errors or warnings",
+          "completed": true
+        }
+      ]
+    },
+    {
+      "id": "T-24",
+      "text": "T-24 · New hero photo",
+      "description": "Goal: replace the hero photo with the facade photo supplied by the user.\nFiles: src/assets/images/hero-*, src/data/photos.js, src/sections/hero.css",
+      "tags": [
+        "phase-3"
+      ],
+      "priority": "Should",
+      "status": "Testing",
+      "completed": false,
+      "createdAt": 1794226524050,
+      "order": 24000,
+      "subtasks": [
+        {
+          "id": "T-24-d1",
+          "text": "DoD: Hero shows the new photo as AVIF and WebP at 800w and its full 1225w, and the old hero files are gone",
+          "completed": true
+        },
+        {
+          "id": "T-24-d2",
+          "text": "DoD: The hours card leaves the guests at the right-hand window visible at 1065px and wider (it overlaps one guest from 1024 to 1064px)",
+          "completed": true
+        },
+        {
+          "id": "T-24-d3",
+          "text": "DoD: Hero keeps fetchpriority=high and the 640px desktop and 340px mobile heights",
+          "completed": true
+        },
+        {
+          "id": "T-24-d4",
           "text": "DoD: npm run build compiles with no errors or warnings",
           "completed": true
         }

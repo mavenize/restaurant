@@ -5,7 +5,7 @@ Build the home page in `design_handoff_home_page/` (desktop 1a, mobile 1b, spec 
 
 ## Decisions
 - **Scope:** home page only. Nav links go to the existing pages on tropicalunpezzo.se.
-- **Images:** the hero and restaurant photos come from the live site. The pasta photo is ["The temptress"](https://commons.wikimedia.org/wiki/File:The_temptress_(Unsplash).jpg) by Izzy Boscawen, CC0 on Wikimedia Commons, because the live site's own pasta photo is too low quality. The real logo is the SVG in the repo root, moved to `src/assets/logo.svg`.
+- **Images:** the hero photo was supplied by the project owner. The restaurant photo comes from the live site. The pasta photo is ["The temptress"](https://commons.wikimedia.org/wiki/File:The_temptress_(Unsplash).jpg) by Izzy Boscawen, CC0 on Wikimedia Commons, because the live site's own pasta photo is too low quality. The real logo is the SVG in the repo root, moved to `src/assets/logo.svg`.
 - **Map:** a real Google Maps iframe, because the handoff specifies it and it needs no supplied asset.
 - **Commits:** Claude proposes each commit, and the user commits and pushes.
 
@@ -77,6 +77,7 @@ Every task also carries one implicit DoD item: `npm run build` compiles with no 
 | T-21 | Real photos | Should | Placeholders replaced with `<picture>`, AVIF and WebP at 800w and 1600w, explicit dimensions, hero `fetchpriority="high"`, others lazy. |
 | T-22 | Light footer logo | Should | `logo-light.svg` is a provisional recolour of `logo.svg` until the client supplies an official version. Footer shows it on the ink background. Header still uses `logo.svg`. |
 | T-23 | Favicons | Should | The live site's icon links and files. Every file loads from the production build, and `/favicon.ico` resolves. |
+| T-24 | New hero photo | Should | Hero shows the supplied facade photo as AVIF and WebP at 800w and its full 1225w. Old hero files removed. The hours card leaves the guests at the right-hand window visible at 1065px and wider. |
 
 ## Design gaps to confirm with the client (built as drawn until then)
 - On mobile the design has no Öppettider section and no way to reopen a dismissed hours card, so hours are gone for that browser session.
