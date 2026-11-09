@@ -6,6 +6,13 @@
   --line-dark: #4a423a;
   --muted: #6b6358;
   --muted-light: #c9bda7;
+  --white: #fff;
+
+  --placeholder-stripe-a: #ece4d4;
+  --placeholder-stripe-b: #f2ebdd;
+  --placeholder-terracotta-stripe-a: #b4553c;
+  --placeholder-terracotta-stripe-b: #ad4b32;
+  --placeholder-terracotta-border: #d98a73;
 
   --font-display: "Young Serif", Georgia, serif;
   --font-body: "Instrument Sans", Helvetica, sans-serif;

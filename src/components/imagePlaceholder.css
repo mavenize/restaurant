@@ -1,0 +1,68 @@
+.placeholder {
+  padding: 20px;
+  border: 1px dashed var(--muted-light);
+  border-radius: 4px;
+  background: repeating-linear-gradient(
+    135deg,
+    var(--placeholder-stripe-a) 0 8px,
+    var(--placeholder-stripe-b) 8px 16px
+  );
+  color: var(--muted);
+  font-family: var(--font-mono);
+  font-size: 12px;
+  line-height: normal;
+}
+
+.placeholder--terracotta {
+  border-color: var(--placeholder-terracotta-border);
+  background: repeating-linear-gradient(
+    135deg,
+    var(--placeholder-terracotta-stripe-a) 0 8px,
+    var(--placeholder-terracotta-stripe-b) 8px 16px
+  );
+  color: var(--white);
+}
+
+.placeholder--hero {
+  height: 640px;
+}
+
+.placeholder--gelato {
+  height: 560px;
+}
+
+.placeholder--restaurant {
+  height: 480px;
+}
+
+.placeholder__label--mobile {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .placeholder {
+    padding: 12px;
+    border-radius: 0;
+    font-size: 11px;
+  }
+
+  .placeholder--hero {
+    height: 340px;
+  }
+
+  .placeholder--gelato {
+    height: 280px;
+  }
+
+  .placeholder--restaurant {
+    height: 240px;
+  }
+
+  .placeholder__label--desktop {
+    display: none;
+  }
+
+  .placeholder__label--mobile {
+    display: inline;
+  }
+}

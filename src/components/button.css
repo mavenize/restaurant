@@ -1,0 +1,39 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 18px 28px;
+  border-radius: 999px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  text-decoration: none;
+  transition:
+    background-color 150ms ease,
+    color 150ms ease;
+}
+
+.button--compact {
+  padding: 14px 24px;
+  font-size: 15px;
+}
+
+.button--primary {
+  background-color: var(--terracotta);
+  color: var(--white);
+}
+
+.button--primary:hover {
+  background-color: var(--ink);
+}
+
+.button--secondary {
+  border: 1px solid var(--ink);
+  color: var(--ink);
+}
+
+.button--secondary:hover {
+  background-color: var(--ink);
+  color: var(--paper);
+}

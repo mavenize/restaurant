@@ -205,8 +205,8 @@
         "phase-1"
       ],
       "priority": "Must",
-      "status": "Testing",
-      "completed": false,
+      "status": "Done",
+      "completed": true,
       "createdAt": 1794226524050,
       "order": 6000,
       "subtasks": [
@@ -245,7 +245,7 @@
         "phase-1"
       ],
       "priority": "Must",
-      "status": "Todo",
+      "status": "Testing",
       "completed": false,
       "createdAt": 1794226524050,
       "order": 7000,
@@ -253,32 +253,32 @@
         {
           "id": "T-07-d1",
           "text": "DoD: Primary and secondary buttons match the hover, focus and 150ms transition in the spec",
-          "completed": false
+          "completed": true
         },
         {
           "id": "T-07-d2",
           "text": "DoD: Booking buttons open in a new tab with rel=noopener",
-          "completed": false
+          "completed": true
         },
         {
           "id": "T-07-d3",
           "text": "DoD: Logo renders from logo.svg",
-          "completed": false
+          "completed": true
         },
         {
           "id": "T-07-d4",
           "text": "DoD: Placeholder takes a size and a label",
-          "completed": false
+          "completed": true
         },
         {
           "id": "T-07-d5",
           "text": "DoD: Hours table renders from data",
-          "completed": false
+          "completed": true
         },
         {
           "id": "T-07-d6",
           "text": "DoD: npm run build compiles with no errors or warnings",
-          "completed": false
+          "completed": true
         }
       ]
     },

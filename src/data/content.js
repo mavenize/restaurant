@@ -19,6 +19,11 @@ const instagramLabel = "Instagram";
 export const content = {
   urls,
 
+  logo: {
+    alt: "Tropical un pezzo d'Italia",
+    href: urls.home,
+  },
+
   booking: {
     label: "Boka bord",
     arrow: "→",
