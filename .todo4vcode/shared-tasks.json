@@ -445,8 +445,8 @@
         "phase-2"
       ],
       "priority": "Must",
-      "status": "Testing",
-      "completed": false,
+      "status": "Done",
+      "completed": true,
       "createdAt": 1794226524050,
       "order": 12000,
       "subtasks": [
@@ -480,7 +480,7 @@
         "phase-2"
       ],
       "priority": "Must",
-      "status": "Todo",
+      "status": "Testing",
       "completed": false,
       "createdAt": 1794226524050,
       "order": 13000,
@@ -488,17 +488,17 @@
         {
           "id": "T-13-d1",
           "text": "DoD: 7fr/5fr grid, vertically centred, placeholder 560px tall",
-          "completed": false
+          "completed": true
         },
         {
           "id": "T-13-d2",
           "text": "DoD: Mobile shows a full-bleed 280px placeholder, then the text",
-          "completed": false
+          "completed": true
         },
         {
           "id": "T-13-d3",
           "text": "DoD: npm run build compiles with no errors or warnings",
-          "completed": false
+          "completed": true
         }
       ]
     },
