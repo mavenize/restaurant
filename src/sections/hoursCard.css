@@ -16,6 +16,10 @@
   display: none;
 }
 
+.hours-card :focus-visible {
+  outline-color: var(--paper);
+}
+
 .hours-card__top {
   display: flex;
   align-items: center;

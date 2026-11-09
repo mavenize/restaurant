@@ -5,12 +5,13 @@ import { createEl } from "../utils/dom.js";
 const MENU_ID = "mobile-menu";
 const OPEN_CLASS = "mobile-menu--open";
 const BODY_LOCK_CLASS = "mobile-menu-locked";
+const PAGE_BEHIND_MENU = "main, footer";
 
 export function createMobileMenu(toggle) {
-  const { nav, openIcon, closeIcon } = content.mobileMenu;
+  const { nav, navLabel, openIcon, closeIcon } = content.mobileMenu;
   const menu = createEl("nav", {
     className: "mobile-menu",
-    attrs: { id: MENU_ID },
+    attrs: { id: MENU_ID, "aria-label": navLabel },
   });
 
   nav.forEach(({ label, href }) => {
@@ -28,6 +29,9 @@ export function createMobileMenu(toggle) {
   function setOpen(open) {
     menu.classList.toggle(OPEN_CLASS, open);
     document.body.classList.toggle(BODY_LOCK_CLASS, open);
+    document.querySelectorAll(PAGE_BEHIND_MENU).forEach((element) => {
+      element.toggleAttribute("inert", open);
+    });
     toggle.setAttribute("aria-expanded", String(open));
     toggle.textContent = open ? closeIcon : openIcon;
   }

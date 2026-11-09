@@ -4,6 +4,10 @@
   line-height: normal;
 }
 
+.footer :focus-visible {
+  outline-color: var(--paper);
+}
+
 .footer__inner {
   display: flex;
   flex-direction: column;

@@ -650,8 +650,8 @@
         "phase-3"
       ],
       "priority": "Should",
-      "status": "Testing",
-      "completed": false,
+      "status": "Done",
+      "completed": true,
       "createdAt": 1794226524050,
       "order": 18000,
       "subtasks": [
@@ -680,7 +680,7 @@
         "phase-3"
       ],
       "priority": "Should",
-      "status": "Todo",
+      "status": "Testing",
       "completed": false,
       "createdAt": 1794226524050,
       "order": 19000,
@@ -688,27 +688,27 @@
         {
           "id": "T-19-d1",
           "text": "DoD: The whole page works by keyboard",
-          "completed": false
+          "completed": true
         },
         {
           "id": "T-19-d2",
           "text": "DoD: Landmarks and heading order are correct",
-          "completed": false
+          "completed": true
         },
         {
           "id": "T-19-d3",
           "text": "DoD: Every icon-only control has a label",
-          "completed": false
+          "completed": true
         },
         {
           "id": "T-19-d5",
           "text": "DoD: Focus outline is visible on ink and terracotta backgrounds, where the ink outline from the spec disappears",
-          "completed": false
+          "completed": true
         },
         {
           "id": "T-19-d4",
           "text": "DoD: npm run build compiles with no errors or warnings",
-          "completed": false
+          "completed": true
         }
       ]
     },

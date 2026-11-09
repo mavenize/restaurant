@@ -4,7 +4,10 @@ import { content } from "../data/content.js";
 import { createEl } from "../utils/dom.js";
 
 function createNav() {
-  const nav = createEl("nav", { className: "footer__nav" });
+  const nav = createEl("nav", {
+    className: "footer__nav",
+    attrs: { "aria-label": content.footer.navLabel },
+  });
 
   content.footer.nav.forEach(({ label, href }) => {
     nav.appendChild(

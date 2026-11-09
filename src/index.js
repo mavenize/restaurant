@@ -15,6 +15,8 @@ const content = document.getElementById("content");
 const main = createEl("main");
 const footer = createFooter();
 
+// The pill hides once the footer is in view, so it must come before the footer to be reachable by Tab.
+main.appendChild(createStickyBooking(footer));
 main.appendChild(createHero());
 main.appendChild(createIntro());
 main.appendChild(createPasta());
@@ -24,4 +26,3 @@ main.appendChild(createVisit());
 content.appendChild(createHeader());
 content.appendChild(main);
 content.appendChild(footer);
-content.appendChild(createStickyBooking(footer));

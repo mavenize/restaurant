@@ -3,11 +3,14 @@ import { createBookingButton } from "../components/button.js";
 import { createLogo } from "../components/logo.js";
 import { content } from "../data/content.js";
 import { createEl } from "../utils/dom.js";
-import { toggleHoursCard } from "./hoursCard.js";
+import { connectHoursToggle } from "./hoursCard.js";
 import { createMobileMenu } from "./mobileMenu.js";
 
 function createNav() {
-  const nav = createEl("nav", { className: "header__nav" });
+  const nav = createEl("nav", {
+    className: "header__nav",
+    attrs: { "aria-label": content.header.navLabel },
+  });
 
   content.header.nav.forEach(({ label, href }) => {
     nav.appendChild(
@@ -25,7 +28,7 @@ function createNav() {
     attrs: { type: "button" },
   });
 
-  hoursToggle.addEventListener("click", toggleHoursCard);
+  connectHoursToggle(hoursToggle);
   nav.appendChild(hoursToggle);
 
   return nav;

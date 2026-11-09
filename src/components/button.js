@@ -28,7 +28,9 @@ export function createButton({
   });
 
   if (arrow) {
-    button.appendChild(createEl("span", { text: arrow }));
+    button.appendChild(
+      createEl("span", { text: arrow, attrs: { "aria-hidden": "true" } }),
+    );
   }
 
   return button;

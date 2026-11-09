@@ -15,6 +15,7 @@ const urls = {
 };
 
 const instagramLabel = "Instagram";
+const mainNavLabel = "Huvudmeny";
 
 export const content = {
   urls,
@@ -44,15 +45,21 @@ export const content = {
   },
 
   header: {
+    navLabel: mainNavLabel,
     nav: [
       { label: "MENY", href: urls.menu },
       { label: "CATERING & ABONNERING", href: urls.catering },
     ],
     hoursToggle: "ÖPPETTIDER",
-    instagram: { label: "IG", ariaLabel: instagramLabel, href: urls.instagram },
+    instagram: {
+      label: "IG",
+      ariaLabel: `IG ${instagramLabel}`,
+      href: urls.instagram,
+    },
   },
 
   mobileMenu: {
+    navLabel: mainNavLabel,
     toggleLabel: "Meny",
     openIcon: "☰",
     closeIcon: "✕",
@@ -104,6 +111,7 @@ export const content = {
   },
 
   footer: {
+    navLabel: "Sidfot",
     nav: [
       { label: "HEM", href: urls.home },
       { label: "MENY", href: urls.menu },

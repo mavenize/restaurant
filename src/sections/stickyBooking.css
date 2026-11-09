@@ -23,4 +23,11 @@
     padding: 0;
     box-shadow: var(--shadow-booking);
   }
+
+  /* The pill floats over paper, ink and terracotta, so its focus ring needs both a light and a dark edge. */
+  .button.sticky-booking__button:focus-visible {
+    box-shadow:
+      0 0 0 3px var(--paper),
+      var(--shadow-booking);
+  }
 }
