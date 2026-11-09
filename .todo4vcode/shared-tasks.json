@@ -1,0 +1,786 @@
+{
+  "format": "todo4vcode-shared-tasks",
+  "version": "1.0.0",
+  "tasks": [
+    {
+      "id": "T-01",
+      "text": "T-01 · Webpack project setup",
+      "description": "Goal: package.json and a minimal Webpack config with a dev server, CSS and asset handling.\nFiles: package.json, package-lock.json, webpack.config.js, .gitignore, src/index.js, src/template.html, src/styles.css",
+      "tags": [
+        "phase-0"
+      ],
+      "priority": "Must",
+      "status": "Testing",
+      "completed": false,
+      "createdAt": 1794226524050,
+      "order": 1000,
+      "subtasks": [
+        {
+          "id": "T-01-d1",
+          "text": "DoD: npx webpack serve serves the page",
+          "completed": true
+        },
+        {
+          "id": "T-01-d2",
+          "text": "DoD: CSS is applied through the bundle (page background is cream in a browser)",
+          "completed": false
+        },
+        {
+          "id": "T-01-d3",
+          "text": "DoD: node_modules and dist are git-ignored",
+          "completed": true
+        },
+        {
+          "id": "T-01-d4",
+          "text": "DoD: npm run build compiles with no errors or warnings",
+          "completed": true
+        }
+      ]
+    },
+    {
+      "id": "T-02",
+      "text": "T-02 · Workflow docs and board",
+      "description": "Goal: record the working rules, the project plan and every task with its Definition of Done.\nFiles: CLAUDE.md, plan.md, .todo4vcode/shared-tasks.json, design_handoff_home_page/",
+      "tags": [
+        "phase-0"
+      ],
+      "priority": "Must",
+      "status": "Testing",
+      "completed": false,
+      "createdAt": 1794226524050,
+      "order": 2000,
+      "subtasks": [
+        {
+          "id": "T-02-d1",
+          "text": "DoD: CLAUDE.md exists and explains the workflow and the board",
+          "completed": true
+        },
+        {
+          "id": "T-02-d2",
+          "text": "DoD: plan.md exists with the full plan",
+          "completed": true
+        },
+        {
+          "id": "T-02-d3",
+          "text": "DoD: Every task appears in the extension with a Definition of Done checklist",
+          "completed": false
+        },
+        {
+          "id": "T-02-d4",
+          "text": "DoD: Handoff folder is committed as reference",
+          "completed": false
+        },
+        {
+          "id": "T-02-d5",
+          "text": "DoD: npm run build compiles with no errors or warnings",
+          "completed": true
+        }
+      ]
+    },
+    {
+      "id": "T-03",
+      "text": "T-03 · DOM helper and app skeleton",
+      "description": "Goal: the createEl helper and index.js appending one module per section, in design order.\nFiles: src/utils/dom.js, src/index.js, src/sections/*.js, src/template.html",
+      "tags": [
+        "phase-1"
+      ],
+      "priority": "Must",
+      "status": "Todo",
+      "completed": false,
+      "createdAt": 1794226524050,
+      "order": 3000,
+      "subtasks": [
+        {
+          "id": "T-03-d1",
+          "text": "DoD: createEl works for class, text and attributes",
+          "completed": false
+        },
+        {
+          "id": "T-03-d2",
+          "text": "DoD: index.js appends empty section modules in design order",
+          "completed": false
+        },
+        {
+          "id": "T-03-d3",
+          "text": "DoD: Body of template.html contains only #content",
+          "completed": false
+        },
+        {
+          "id": "T-03-d4",
+          "text": "DoD: No innerHTML or insertAdjacentHTML in src/",
+          "completed": false
+        },
+        {
+          "id": "T-03-d5",
+          "text": "DoD: npm run build compiles with no errors or warnings",
+          "completed": false
+        }
+      ]
+    },
+    {
+      "id": "T-04",
+      "text": "T-04 · Design tokens and base styles",
+      "description": "Goal: handoff colours as tokens, reset, body type, container and focus styles.\nFiles: src/styles/tokens.css, src/styles/base.css, src/index.js (remove src/styles.css)",
+      "tags": [
+        "phase-1"
+      ],
+      "priority": "Must",
+      "status": "Todo",
+      "completed": false,
+      "createdAt": 1794226524050,
+      "order": 4000,
+      "subtasks": [
+        {
+          "id": "T-04-d1",
+          "text": "DoD: All handoff colours exist as tokens in tokens.css",
+          "completed": false
+        },
+        {
+          "id": "T-04-d2",
+          "text": "DoD: Reset and body type are applied",
+          "completed": false
+        },
+        {
+          "id": "T-04-d3",
+          "text": "DoD: Container is max 1440px with 64px desktop and 20px mobile side padding",
+          "completed": false
+        },
+        {
+          "id": "T-04-d4",
+          "text": "DoD: Focus-visible is a 2px ink outline, offset 3px",
+          "completed": false
+        },
+        {
+          "id": "T-04-d5",
+          "text": "DoD: npm run build compiles with no errors or warnings",
+          "completed": false
+        }
+      ]
+    },
+    {
+      "id": "T-05",
+      "text": "T-05 · Self-host fonts",
+      "description": "Goal: local woff2 fonts extracted from the design bundle.\nFiles: src/assets/fonts/*.woff2, src/styles/fonts.css",
+      "tags": [
+        "phase-1"
+      ],
+      "priority": "Must",
+      "status": "Todo",
+      "completed": false,
+      "createdAt": 1794226524050,
+      "order": 5000,
+      "subtasks": [
+        {
+          "id": "T-05-d1",
+          "text": "DoD: Young Serif, Instrument Sans 400/500/600 and IBM Plex Mono 400 load as local woff2",
+          "completed": false
+        },
+        {
+          "id": "T-05-d2",
+          "text": "DoD: Every @font-face uses font-display: swap",
+          "completed": false
+        },
+        {
+          "id": "T-05-d3",
+          "text": "DoD: No requests go to Google Fonts",
+          "completed": false
+        },
+        {
+          "id": "T-05-d4",
+          "text": "DoD: å ä ö render correctly in each family",
+          "completed": false
+        },
+        {
+          "id": "T-05-d5",
+          "text": "DoD: npm run build compiles with no errors or warnings",
+          "completed": false
+        }
+      ]
+    },
+    {
+      "id": "T-06",
+      "text": "T-06 · Content data module",
+      "description": "Goal: one source for copy, hours, address and URLs.\nFiles: src/data/content.js",
+      "tags": [
+        "phase-1"
+      ],
+      "priority": "Must",
+      "status": "Todo",
+      "completed": false,
+      "createdAt": 1794226524050,
+      "order": 6000,
+      "subtasks": [
+        {
+          "id": "T-06-d1",
+          "text": "DoD: All copy is verbatim from the design",
+          "completed": false
+        },
+        {
+          "id": "T-06-d2",
+          "text": "DoD: Hours are defined once",
+          "completed": false
+        },
+        {
+          "id": "T-06-d3",
+          "text": "DoD: Every link has a real URL, with HEM, OM OSS, PIZZA and VIN & ÖL looked up on the live site",
+          "completed": false
+        },
+        {
+          "id": "T-06-d4",
+          "text": "DoD: Booking URL matches the handoff",
+          "completed": false
+        },
+        {
+          "id": "T-06-d5",
+          "text": "DoD: npm run build compiles with no errors or warnings",
+          "completed": false
+        }
+      ]
+    },
+    {
+      "id": "T-07",
+      "text": "T-07 · Shared components",
+      "description": "Goal: reusable button, logo, image placeholder and hours table.\nFiles: src/components/*, src/assets/logo.svg (moved from the repo root)",
+      "tags": [
+        "phase-1"
+      ],
+      "priority": "Must",
+      "status": "Todo",
+      "completed": false,
+      "createdAt": 1794226524050,
+      "order": 7000,
+      "subtasks": [
+        {
+          "id": "T-07-d1",
+          "text": "DoD: Primary and secondary buttons match the hover, focus and 150ms transition in the spec",
+          "completed": false
+        },
+        {
+          "id": "T-07-d2",
+          "text": "DoD: Booking buttons open in a new tab with rel=noopener",
+          "completed": false
+        },
+        {
+          "id": "T-07-d3",
+          "text": "DoD: Logo renders from logo.svg",
+          "completed": false
+        },
+        {
+          "id": "T-07-d4",
+          "text": "DoD: Placeholder takes a size and a label",
+          "completed": false
+        },
+        {
+          "id": "T-07-d5",
+          "text": "DoD: Hours table renders from data",
+          "completed": false
+        },
+        {
+          "id": "T-07-d6",
+          "text": "DoD: npm run build compiles with no errors or warnings",
+          "completed": false
+        }
+      ]
+    },
+    {
+      "id": "T-08",
+      "text": "T-08 · Desktop and tablet header",
+      "description": "Goal: the header at 768px and wider, as drawn in 1a.\nFiles: src/sections/header.js, header.css",
+      "tags": [
+        "phase-2"
+      ],
+      "priority": "Must",
+      "status": "Todo",
+      "completed": false,
+      "createdAt": 1794226524050,
+      "order": 8000,
+      "subtasks": [
+        {
+          "id": "T-08-d1",
+          "text": "DoD: Logo, nav, 40px Instagram circle and booking button match 1a",
+          "completed": false
+        },
+        {
+          "id": "T-08-d2",
+          "text": "DoD: 1px bottom border and 24px/64px padding",
+          "completed": false
+        },
+        {
+          "id": "T-08-d3",
+          "text": "DoD: npm run build compiles with no errors or warnings",
+          "completed": false
+        }
+      ]
+    },
+    {
+      "id": "T-09",
+      "text": "T-09 · Mobile header and menu",
+      "description": "Goal: sticky mobile header and full-screen menu, as drawn in 1b.\nFiles: src/sections/header.js, mobileMenu.js, mobileMenu.css",
+      "tags": [
+        "phase-2"
+      ],
+      "priority": "Must",
+      "status": "Todo",
+      "completed": false,
+      "createdAt": 1794226524050,
+      "order": 9000,
+      "subtasks": [
+        {
+          "id": "T-09-d1",
+          "text": "DoD: Sticky header with 120×36 logo and 44px toggle",
+          "completed": false
+        },
+        {
+          "id": "T-09-d2",
+          "text": "DoD: Toggle switches ☰/✕ and updates aria-expanded and aria-controls",
+          "completed": false
+        },
+        {
+          "id": "T-09-d3",
+          "text": "DoD: Full-screen ink overlay with Young Serif 32px links",
+          "completed": false
+        },
+        {
+          "id": "T-09-d4",
+          "text": "DoD: Esc closes the menu",
+          "completed": false
+        },
+        {
+          "id": "T-09-d5",
+          "text": "DoD: Body scroll is locked while open",
+          "completed": false
+        },
+        {
+          "id": "T-09-d6",
+          "text": "DoD: npm run build compiles with no errors or warnings",
+          "completed": false
+        }
+      ]
+    },
+    {
+      "id": "T-10",
+      "text": "T-10 · Hero",
+      "description": "Goal: the hero text, buttons and photo placeholder.\nFiles: src/sections/hero.js, hero.css",
+      "tags": [
+        "phase-2"
+      ],
+      "priority": "Must",
+      "status": "Todo",
+      "completed": false,
+      "createdAt": 1794226524050,
+      "order": 10000,
+      "subtasks": [
+        {
+          "id": "T-10-d1",
+          "text": "DoD: One h1 holds both Salve! and the subline",
+          "completed": false
+        },
+        {
+          "id": "T-10-d2",
+          "text": "DoD: Type is 128/72px and 36/24px",
+          "completed": false
+        },
+        {
+          "id": "T-10-d3",
+          "text": "DoD: Placeholder is 640px tall on desktop and 340px on mobile",
+          "completed": false
+        },
+        {
+          "id": "T-10-d4",
+          "text": "DoD: Desktop buttons match 1a and are absent on mobile as drawn in 1b",
+          "completed": false
+        },
+        {
+          "id": "T-10-d5",
+          "text": "DoD: npm run build compiles with no errors or warnings",
+          "completed": false
+        }
+      ]
+    },
+    {
+      "id": "T-11",
+      "text": "T-11 · Hours card",
+      "description": "Goal: dismissible hours card over the hero.\nFiles: src/sections/hoursCard.js, hoursCard.css",
+      "tags": [
+        "phase-2"
+      ],
+      "priority": "Must",
+      "status": "Todo",
+      "completed": false,
+      "createdAt": 1794226524050,
+      "order": 11000,
+      "subtasks": [
+        {
+          "id": "T-11-d1",
+          "text": "DoD: Overlaps the photo by -32px/-40px on desktop and sits in flow on mobile",
+          "completed": false
+        },
+        {
+          "id": "T-11-d2",
+          "text": "DoD: Close sets sessionStorage.hoursDismissed to 1 and the card stays hidden on reload",
+          "completed": false
+        },
+        {
+          "id": "T-11-d3",
+          "text": "DoD: ÖPPETTIDER in the nav toggles it back",
+          "completed": false
+        },
+        {
+          "id": "T-11-d4",
+          "text": "DoD: Close target is 32px desktop and 44px mobile, labelled Stäng",
+          "completed": false
+        },
+        {
+          "id": "T-11-d5",
+          "text": "DoD: npm run build compiles with no errors or warnings",
+          "completed": false
+        }
+      ]
+    },
+    {
+      "id": "T-12",
+      "text": "T-12 · Intro",
+      "description": "Goal: lead quote and intro paragraph.\nFiles: src/sections/intro.js, intro.css",
+      "tags": [
+        "phase-2"
+      ],
+      "priority": "Must",
+      "status": "Todo",
+      "completed": false,
+      "createdAt": 1794226524050,
+      "order": 12000,
+      "subtasks": [
+        {
+          "id": "T-12-d1",
+          "text": "DoD: 5fr/7fr grid with a top border",
+          "completed": false
+        },
+        {
+          "id": "T-12-d2",
+          "text": "DoD: Paragraph is at most 640px wide",
+          "completed": false
+        },
+        {
+          "id": "T-12-d3",
+          "text": "DoD: Paragraph comes first on mobile",
+          "completed": false
+        },
+        {
+          "id": "T-12-d4",
+          "text": "DoD: npm run build compiles with no errors or warnings",
+          "completed": false
+        }
+      ]
+    },
+    {
+      "id": "T-13",
+      "text": "T-13 · Gelato and pasta",
+      "description": "Goal: gelato placeholder with the pasta text.\nFiles: src/sections/pasta.js, pasta.css",
+      "tags": [
+        "phase-2"
+      ],
+      "priority": "Must",
+      "status": "Todo",
+      "completed": false,
+      "createdAt": 1794226524050,
+      "order": 13000,
+      "subtasks": [
+        {
+          "id": "T-13-d1",
+          "text": "DoD: 7fr/5fr grid, vertically centred, placeholder 560px tall",
+          "completed": false
+        },
+        {
+          "id": "T-13-d2",
+          "text": "DoD: Mobile shows a full-bleed 280px placeholder, then the text",
+          "completed": false
+        },
+        {
+          "id": "T-13-d3",
+          "text": "DoD: npm run build compiles with no errors or warnings",
+          "completed": false
+        }
+      ]
+    },
+    {
+      "id": "T-14",
+      "text": "T-14 · Två världar band",
+      "description": "Goal: terracotta band with heading, text and placeholder.\nFiles: src/sections/twoWorlds.js, twoWorlds.css",
+      "tags": [
+        "phase-2"
+      ],
+      "priority": "Must",
+      "status": "Todo",
+      "completed": false,
+      "createdAt": 1794226524050,
+      "order": 14000,
+      "subtasks": [
+        {
+          "id": "T-14-d1",
+          "text": "DoD: Terracotta band with white text",
+          "completed": false
+        },
+        {
+          "id": "T-14-d2",
+          "text": "DoD: Placeholder is 480px on desktop and 240px inside the band on mobile",
+          "completed": false
+        },
+        {
+          "id": "T-14-d3",
+          "text": "DoD: npm run build compiles with no errors or warnings",
+          "completed": false
+        }
+      ]
+    },
+    {
+      "id": "T-15",
+      "text": "T-15 · Hours and map",
+      "description": "Goal: hours table, address, booking button and map.\nFiles: src/sections/visit.js, visit.css",
+      "tags": [
+        "phase-2"
+      ],
+      "priority": "Must",
+      "status": "Todo",
+      "completed": false,
+      "createdAt": 1794226524050,
+      "order": 15000,
+      "subtasks": [
+        {
+          "id": "T-15-d1",
+          "text": "DoD: Hours come from the shared data and match the card",
+          "completed": false
+        },
+        {
+          "id": "T-15-d2",
+          "text": "DoD: Map iframe is 480px on desktop and 260px on mobile",
+          "completed": false
+        },
+        {
+          "id": "T-15-d3",
+          "text": "DoD: Map has loading=lazy and the specified title",
+          "completed": false
+        },
+        {
+          "id": "T-15-d4",
+          "text": "DoD: Hours column is hidden on mobile as drawn in 1b",
+          "completed": false
+        },
+        {
+          "id": "T-15-d5",
+          "text": "DoD: npm run build compiles with no errors or warnings",
+          "completed": false
+        }
+      ]
+    },
+    {
+      "id": "T-16",
+      "text": "T-16 · Footer",
+      "description": "Goal: footer with logo, nav and copyright row.\nFiles: src/sections/footer.js, footer.css",
+      "tags": [
+        "phase-2"
+      ],
+      "priority": "Must",
+      "status": "Todo",
+      "completed": false,
+      "createdAt": 1794226524050,
+      "order": 16000,
+      "subtasks": [
+        {
+          "id": "T-16-d1",
+          "text": "DoD: Ink background",
+          "completed": false
+        },
+        {
+          "id": "T-16-d2",
+          "text": "DoD: Nav is 3 columns on desktop and 2 on tablet and mobile",
+          "completed": false
+        },
+        {
+          "id": "T-16-d3",
+          "text": "DoD: Copyright row has the mailto link",
+          "completed": false
+        },
+        {
+          "id": "T-16-d4",
+          "text": "DoD: Logo and Instagram show on desktop only, as drawn",
+          "completed": false
+        },
+        {
+          "id": "T-16-d5",
+          "text": "DoD: npm run build compiles with no errors or warnings",
+          "completed": false
+        }
+      ]
+    },
+    {
+      "id": "T-17",
+      "text": "T-17 · Sticky mobile booking",
+      "description": "Goal: floating booking pill on mobile.\nFiles: src/sections/stickyBooking.js, stickyBooking.css",
+      "tags": [
+        "phase-2"
+      ],
+      "priority": "Must",
+      "status": "Todo",
+      "completed": false,
+      "createdAt": 1794226524050,
+      "order": 17000,
+      "subtasks": [
+        {
+          "id": "T-17-d1",
+          "text": "DoD: Mobile only, 56px pill, 16px from the bottom, with the specified shadow",
+          "completed": false
+        },
+        {
+          "id": "T-17-d2",
+          "text": "DoD: Hidden while the footer is visible, using IntersectionObserver",
+          "completed": false
+        },
+        {
+          "id": "T-17-d3",
+          "text": "DoD: npm run build compiles with no errors or warnings",
+          "completed": false
+        }
+      ]
+    },
+    {
+      "id": "T-18",
+      "text": "T-18 · SEO and meta",
+      "description": "Goal: the live site's head tags, the one deliberate exception to JS-only because social scrapers do not run JS.\nFiles: src/template.html",
+      "tags": [
+        "phase-3"
+      ],
+      "priority": "Should",
+      "status": "Todo",
+      "completed": false,
+      "createdAt": 1794226524050,
+      "order": 18000,
+      "subtasks": [
+        {
+          "id": "T-18-d1",
+          "text": "DoD: Title, description, canonical, Open Graph and Twitter tags are copied from the live site",
+          "completed": false
+        },
+        {
+          "id": "T-18-d2",
+          "text": "DoD: html has lang=sv",
+          "completed": false
+        },
+        {
+          "id": "T-18-d3",
+          "text": "DoD: npm run build compiles with no errors or warnings",
+          "completed": false
+        }
+      ]
+    },
+    {
+      "id": "T-19",
+      "text": "T-19 · Accessibility pass",
+      "description": "Goal: confirm the finished page is accessible.\nFiles: any section found lacking",
+      "tags": [
+        "phase-3"
+      ],
+      "priority": "Should",
+      "status": "Todo",
+      "completed": false,
+      "createdAt": 1794226524050,
+      "order": 19000,
+      "subtasks": [
+        {
+          "id": "T-19-d1",
+          "text": "DoD: The whole page works by keyboard",
+          "completed": false
+        },
+        {
+          "id": "T-19-d2",
+          "text": "DoD: Landmarks and heading order are correct",
+          "completed": false
+        },
+        {
+          "id": "T-19-d3",
+          "text": "DoD: Every icon-only control has a label",
+          "completed": false
+        },
+        {
+          "id": "T-19-d4",
+          "text": "DoD: npm run build compiles with no errors or warnings",
+          "completed": false
+        }
+      ]
+    },
+    {
+      "id": "T-20",
+      "text": "T-20 · Responsive QA against design",
+      "description": "Goal: final comparison with the design at every breakpoint.\nFiles: any section found lacking",
+      "tags": [
+        "phase-3"
+      ],
+      "priority": "Must",
+      "status": "Todo",
+      "completed": false,
+      "createdAt": 1794226524050,
+      "order": 20000,
+      "subtasks": [
+        {
+          "id": "T-20-d1",
+          "text": "DoD: Compared with 1a and 1b at 390, 768, 1024 and 1440px",
+          "completed": false
+        },
+        {
+          "id": "T-20-d2",
+          "text": "DoD: No horizontal scroll at any width",
+          "completed": false
+        },
+        {
+          "id": "T-20-d3",
+          "text": "DoD: Differences are fixed or logged as new tasks",
+          "completed": false
+        },
+        {
+          "id": "T-20-d4",
+          "text": "DoD: Production build is served and checked",
+          "completed": false
+        },
+        {
+          "id": "T-20-d5",
+          "text": "DoD: npm run build compiles with no errors or warnings",
+          "completed": false
+        }
+      ]
+    },
+    {
+      "id": "T-21",
+      "text": "T-21 · Real photos",
+      "description": "Goal: replace placeholders with real photos. Blocked until photos exist.\nFiles: src/components/, src/assets/images/",
+      "tags": [
+        "phase-3"
+      ],
+      "priority": "Wont",
+      "status": "Todo",
+      "completed": false,
+      "createdAt": 1794226524050,
+      "order": 21000,
+      "subtasks": [
+        {
+          "id": "T-21-d1",
+          "text": "DoD: Placeholders are replaced with picture elements using AVIF and WebP at 800w and 1600w",
+          "completed": false
+        },
+        {
+          "id": "T-21-d2",
+          "text": "DoD: Images have explicit dimensions",
+          "completed": false
+        },
+        {
+          "id": "T-21-d3",
+          "text": "DoD: Hero uses fetchpriority=high and the others are lazy",
+          "completed": false
+        },
+        {
+          "id": "T-21-d4",
+          "text": "DoD: npm run build compiles with no errors or warnings",
+          "completed": false
+        }
+      ]
+    }
+  ]
+}
