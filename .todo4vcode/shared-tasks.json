@@ -480,8 +480,8 @@
         "phase-2"
       ],
       "priority": "Must",
-      "status": "Testing",
-      "completed": false,
+      "status": "Done",
+      "completed": true,
       "createdAt": 1794226524050,
       "order": 13000,
       "subtasks": [
@@ -510,7 +510,7 @@
         "phase-2"
       ],
       "priority": "Must",
-      "status": "Todo",
+      "status": "Testing",
       "completed": false,
       "createdAt": 1794226524050,
       "order": 14000,
@@ -518,17 +518,17 @@
         {
           "id": "T-14-d1",
           "text": "DoD: Terracotta band with white text",
-          "completed": false
+          "completed": true
         },
         {
           "id": "T-14-d2",
           "text": "DoD: Placeholder is 480px on desktop and 240px inside the band on mobile",
-          "completed": false
+          "completed": true
         },
         {
           "id": "T-14-d3",
           "text": "DoD: npm run build compiles with no errors or warnings",
-          "completed": false
+          "completed": true
         }
       ]
     },
