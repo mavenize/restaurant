@@ -320,8 +320,8 @@
         "phase-2"
       ],
       "priority": "Must",
-      "status": "Testing",
-      "completed": false,
+      "status": "Done",
+      "completed": true,
       "createdAt": 1794226524050,
       "order": 9000,
       "subtasks": [
@@ -365,7 +365,7 @@
         "phase-2"
       ],
       "priority": "Must",
-      "status": "Todo",
+      "status": "Testing",
       "completed": false,
       "createdAt": 1794226524050,
       "order": 10000,
@@ -373,27 +373,27 @@
         {
           "id": "T-10-d1",
           "text": "DoD: One h1 holds both Salve! and the subline",
-          "completed": false
+          "completed": true
         },
         {
           "id": "T-10-d2",
           "text": "DoD: Type is 128/72px and 36/24px",
-          "completed": false
+          "completed": true
         },
         {
           "id": "T-10-d3",
           "text": "DoD: Placeholder is 640px tall on desktop and 340px on mobile",
-          "completed": false
+          "completed": true
         },
         {
           "id": "T-10-d4",
           "text": "DoD: Desktop buttons match 1a and are absent on mobile as drawn in 1b",
-          "completed": false
+          "completed": true
         },
         {
           "id": "T-10-d5",
           "text": "DoD: npm run build compiles with no errors or warnings",
-          "completed": false
+          "completed": true
         }
       ]
     },
