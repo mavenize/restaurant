@@ -1,6 +1,7 @@
 import "./pasta.css";
-import { createImagePlaceholder } from "../components/imagePlaceholder.js";
+import { createPhoto } from "../components/photo.js";
 import { content } from "../data/content.js";
+import { photos } from "../data/photos.js";
 import { createEl } from "../utils/dom.js";
 
 function createText() {
@@ -18,10 +19,10 @@ export function createPasta() {
   const inner = createEl("div", { className: "container pasta__inner" });
 
   inner.appendChild(
-    createImagePlaceholder({
-      size: "gelato",
-      label: content.pasta.placeholder,
-      className: "pasta__photo",
+    createPhoto({
+      photo: photos.pasta,
+      alt: content.pasta.photoAlt,
+      size: "pasta",
     }),
   );
   inner.appendChild(createText());

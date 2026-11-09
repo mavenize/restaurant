@@ -720,8 +720,8 @@
         "phase-3"
       ],
       "priority": "Must",
-      "status": "Testing",
-      "completed": false,
+      "status": "Done",
+      "completed": true,
       "createdAt": 1794226524050,
       "order": 20000,
       "subtasks": [
@@ -755,12 +755,12 @@
     {
       "id": "T-21",
       "text": "T-21 · Real photos",
-      "description": "Goal: replace placeholders with real photos. Blocked until photos exist.\nFiles: src/components/, src/assets/images/",
+      "description": "Goal: replace placeholders with real photos. Hero and restaurant photos come from the live site, the pasta photo is CC0 from Wikimedia Commons.\nFiles: src/components/photo.js, photo.css, src/data/photos.js, src/assets/images/, sections that used the placeholder",
       "tags": [
         "phase-3"
       ],
-      "priority": "Wont",
-      "status": "Todo",
+      "priority": "Should",
+      "status": "Testing",
       "completed": false,
       "createdAt": 1794226524050,
       "order": 21000,
@@ -773,17 +773,17 @@
         {
           "id": "T-21-d2",
           "text": "DoD: Images have explicit dimensions",
-          "completed": false
+          "completed": true
         },
         {
           "id": "T-21-d3",
           "text": "DoD: Hero uses fetchpriority=high and the others are lazy",
-          "completed": false
+          "completed": true
         },
         {
           "id": "T-21-d4",
           "text": "DoD: npm run build compiles with no errors or warnings",
-          "completed": false
+          "completed": true
         }
       ]
     },
@@ -812,6 +812,36 @@
         },
         {
           "id": "T-22-d3",
+          "text": "DoD: npm run build compiles with no errors or warnings",
+          "completed": false
+        }
+      ]
+    },
+    {
+      "id": "T-23",
+      "text": "T-23 · Favicons",
+      "description": "Goal: the live site's favicons in the browser tab and on home screens.\nFiles: src/assets/favicons/, src/template.html, webpack.config.js",
+      "tags": [
+        "phase-3"
+      ],
+      "priority": "Should",
+      "status": "Todo",
+      "completed": false,
+      "createdAt": 1794226524050,
+      "order": 23000,
+      "subtasks": [
+        {
+          "id": "T-23-d1",
+          "text": "DoD: Icon links match the live site and every file loads from the production build",
+          "completed": false
+        },
+        {
+          "id": "T-23-d2",
+          "text": "DoD: /favicon.ico resolves",
+          "completed": false
+        },
+        {
+          "id": "T-23-d3",
           "text": "DoD: npm run build compiles with no errors or warnings",
           "completed": false
         }

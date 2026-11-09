@@ -53,10 +53,9 @@
   position: relative;
 }
 
-.hero__photo {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-end;
+/* Anchored to the bottom so the guests' faces stay clear of the hours card. */
+.hero__photo .photo__image {
+  object-position: center bottom;
 }
 
 @media (max-width: 1023px) {
@@ -94,9 +93,5 @@
 
   .hero__actions {
     display: none;
-  }
-
-  .hero__photo {
-    display: block;
   }
 }

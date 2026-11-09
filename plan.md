@@ -5,7 +5,7 @@ Build the home page in `design_handoff_home_page/` (desktop 1a, mobile 1b, spec 
 
 ## Decisions
 - **Scope:** home page only. Nav links go to the existing pages on tropicalunpezzo.se.
-- **Images:** striped placeholders for the three photos, matching the design's exact sizes. The real logo is the SVG in the repo root, moved to `src/assets/logo.svg`.
+- **Images:** the hero and restaurant photos come from the live site. The pasta photo is ["The temptress"](https://commons.wikimedia.org/wiki/File:The_temptress_(Unsplash).jpg) by Izzy Boscawen, CC0 on Wikimedia Commons, because the live site's own pasta photo is too low quality. The real logo is the SVG in the repo root, moved to `src/assets/logo.svg`.
 - **Map:** a real Google Maps iframe, because the handoff specifies it and it needs no supplied asset.
 - **Commits:** Claude proposes each commit, and the user commits and pushes.
 
@@ -18,7 +18,7 @@ src/
   template.html
   data/content.js       single source for copy, hours, address, URLs
   utils/dom.js          createEl(tag, { className, text, attrs })
-  components/           button, logo, imagePlaceholder, hoursTable
+  components/           button, logo, photo, hoursTable
   sections/             header, mobileMenu, hero, hoursCard, intro, pasta,
                         twoWorlds, visit, footer, stickyBooking (each .js + .css)
   styles/               tokens.css, fonts.css, base.css
@@ -74,8 +74,9 @@ Every task also carries one implicit DoD item: `npm run build` compiles with no 
 | T-18 | SEO and meta | Should | Title, description, canonical, Open Graph and Twitter tags copied from the live site into `template.html`. This is the one deliberate exception to JS-only, because social scrapers do not run JS. `lang="sv"`. |
 | T-19 | Accessibility pass | Should | Whole page works by keyboard. Landmarks and heading order are correct. Every icon-only control has a label. |
 | T-20 | Responsive QA against design | Must | Compared with 1a and 1b at 390, 768, 1024 and 1440. No horizontal scroll at any width. Differences fixed or logged as new tasks. Production build served and checked. |
-| T-21 | Real photos | Wont (for now) | Blocked until photos exist. Placeholders replaced with `<picture>`, AVIF and WebP at 800w and 1600w, explicit dimensions, hero `fetchpriority="high"`, others lazy. |
+| T-21 | Real photos | Should | Placeholders replaced with `<picture>`, AVIF and WebP at 800w and 1600w, explicit dimensions, hero `fetchpriority="high"`, others lazy. |
 | T-22 | Light footer logo | Should | Blocked until the client supplies `logo-light.svg`. Footer shows it on the ink background. Header still uses `logo.svg`. |
+| T-23 | Favicons | Should | The live site's icon links and files. Every file loads from the production build, and `/favicon.ico` resolves. |
 
 ## Design gaps to confirm with the client (built as drawn until then)
 - On mobile the design has no Öppettider section and no way to reopen a dismissed hours card, so hours are gone for that browser session.

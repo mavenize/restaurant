@@ -1,7 +1,8 @@
 import "./hero.css";
 import { createBookingButton, createButton } from "../components/button.js";
-import { createImagePlaceholder } from "../components/imagePlaceholder.js";
+import { createPhoto } from "../components/photo.js";
 import { content } from "../data/content.js";
+import { photos } from "../data/photos.js";
 import { createEl } from "../utils/dom.js";
 import { createHoursCard } from "./hoursCard.js";
 
@@ -46,9 +47,11 @@ export function createHero() {
   text.appendChild(createActions());
 
   media.appendChild(
-    createImagePlaceholder({
+    createPhoto({
+      photo: photos.hero,
+      alt: content.hero.photoAlt,
       size: "hero",
-      label: content.hero.placeholder,
+      priority: true,
       className: "hero__photo",
     }),
   );

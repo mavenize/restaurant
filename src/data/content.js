@@ -75,10 +75,8 @@ export const content = {
     display: "Salve!",
     subline: "Vad kul att ni hittat hit! Vi är en italiensk restaurang",
     menuButton: { label: "Se menyn (PDF)", href: urls.menu },
-    placeholder: {
-      desktop: "hero · uteservering Kungsträdgården · 1680×1280 webp",
-      mobile: "hero · 800×1000 webp",
-    },
+    photoAlt:
+      "Italiensk restaurang med uteservering i Kungsträdgården, Stockholm",
   },
 
   intro: {
@@ -89,20 +87,15 @@ export const content = {
   pasta: {
     heading: "Italiensk pasta i Stockholm",
     body: "Vi är stolta över att servera autentisk pasta, tillagad med kärlek och traditionella italienska recept. Perfekt som en mättande lunch eller en smakrik middag i hjärtat av staden. Varje tallrik är en resa till Italiens kulinariska arv, där färska råvaror och genuin kvalitet står i centrum. Förutom våra klassiska pastarätter erbjuder vi ett brett urval av smaker som garanterat mättar både stora och små sällskap. Välkommen till Tropical un pezzo d'Italia, en plats där du kan njuta av en bit av Italien mitt i Kungsträdgården!",
-    placeholder: {
-      desktop: "gelato · 1600×1200 webp",
-      mobile: "gelato · 800×600 webp",
-    },
+    photoAlt: "Tagliatelle i en djup vit tallrik på ett träbord",
   },
 
   twoWorlds: {
     heading: "Två världar blir till en hos oss.",
     // "välkommna" is the live site's spelling, kept until the client confirms a fix.
     body: "Vi hälsar stora som små välkommna in - en plats där Stockholm möter Italien, och där vi önskar att varje besök blir något att minnas.",
-    placeholder: {
-      desktop: "restaurang · 1600×1100 webp",
-      mobile: "restaurang · 800×600 webp",
-    },
+    photoAlt:
+      "Pizza, charkuterier och ett glas rött vin på ett bord i restaurangen",
   },
 
   visit: {

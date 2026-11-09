@@ -29,10 +29,6 @@
     padding: 0;
   }
 
-  .placeholder.pasta__photo {
-    border-inline: 0;
-  }
-
   .pasta__text {
     gap: 16px;
     padding: 40px var(--gutter);

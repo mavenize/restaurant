@@ -1,0 +1,40 @@
+.photo {
+  display: block;
+}
+
+.photo__image {
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+.photo--hero {
+  height: 640px;
+}
+
+.photo--pasta {
+  height: 560px;
+}
+
+.photo--restaurant {
+  height: 480px;
+}
+
+@media (max-width: 767px) {
+  .photo__image {
+    border-radius: 0;
+  }
+
+  .photo--hero {
+    height: 340px;
+  }
+
+  .photo--pasta {
+    height: 280px;
+  }
+
+  .photo--restaurant {
+    height: 240px;
+  }
+}

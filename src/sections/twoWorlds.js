@@ -1,6 +1,7 @@
 import "./twoWorlds.css";
-import { createImagePlaceholder } from "../components/imagePlaceholder.js";
+import { createPhoto } from "../components/photo.js";
 import { content } from "../data/content.js";
+import { photos } from "../data/photos.js";
 import { createEl } from "../utils/dom.js";
 
 function createText() {
@@ -23,10 +24,10 @@ export function createTwoWorlds() {
 
   inner.appendChild(createText());
   inner.appendChild(
-    createImagePlaceholder({
+    createPhoto({
+      photo: photos.restaurant,
+      alt: content.twoWorlds.photoAlt,
       size: "restaurant",
-      tone: "terracotta",
-      label: content.twoWorlds.placeholder,
     }),
   );
   band.appendChild(inner);
