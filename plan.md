@@ -75,13 +75,13 @@ Every task also carries one implicit DoD item: `npm run build` compiles with no 
 | T-19 | Accessibility pass | Should | Whole page works by keyboard. Landmarks and heading order are correct. Every icon-only control has a label. |
 | T-20 | Responsive QA against design | Must | Compared with 1a and 1b at 390, 768, 1024 and 1440. No horizontal scroll at any width. Differences fixed or logged as new tasks. Production build served and checked. |
 | T-21 | Real photos | Should | Placeholders replaced with `<picture>`, AVIF and WebP at 800w and 1600w, explicit dimensions, hero `fetchpriority="high"`, others lazy. |
-| T-22 | Light footer logo | Should | Blocked until the client supplies `logo-light.svg`. Footer shows it on the ink background. Header still uses `logo.svg`. |
+| T-22 | Light footer logo | Should | `logo-light.svg` is a provisional recolour of `logo.svg` until the client supplies an official version. Footer shows it on the ink background. Header still uses `logo.svg`. |
 | T-23 | Favicons | Should | The live site's icon links and files. Every file loads from the production build, and `/favicon.ico` resolves. |
 
 ## Design gaps to confirm with the client (built as drawn until then)
 - On mobile the design has no Öppettider section and no way to reopen a dismissed hours card, so hours are gone for that browser session.
 - "välkommna" is a known typo on the live site. Kept verbatim until the client confirms the fix.
-- No light logo was supplied, so the footer uses `logo.svg` on the dark background. It may need a light version.
+- No light logo was supplied, so the footer uses `logo-light.svg`, a recolour of `logo.svg` made for this project. Replace it if the client has an official version.
 
 ## Verification
 - **Docs step:** `shared-tasks.json` parses as JSON, 21 tasks are present, each with at least one `DoD:` subtask, and they appear in the extension's sidebar.

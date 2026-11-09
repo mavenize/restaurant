@@ -790,12 +790,12 @@
     {
       "id": "T-22",
       "text": "T-22 · Light footer logo",
-      "description": "Goal: use a light logo on the ink footer, as the design calls for. The regular logo has low contrast there. Blocked until the client supplies logo-light.svg.\nFiles: src/assets/logo-light.svg, src/components/logo.js, src/sections/footer.js",
+      "description": "Goal: use a light logo on the ink footer, as the design calls for. The regular logo has low contrast there. The file is a provisional recolour of logo.svg until the client supplies an official version.\nFiles: src/assets/logo-light.svg, src/components/logo.js, src/sections/footer.js",
       "tags": [
         "phase-3"
       ],
       "priority": "Should",
-      "status": "Todo",
+      "status": "Testing",
       "completed": false,
       "createdAt": 1794226524050,
       "order": 22000,
@@ -803,17 +803,17 @@
         {
           "id": "T-22-d1",
           "text": "DoD: Footer shows logo-light.svg on the ink background",
-          "completed": false
+          "completed": true
         },
         {
           "id": "T-22-d2",
           "text": "DoD: Header still uses logo.svg",
-          "completed": false
+          "completed": true
         },
         {
           "id": "T-22-d3",
           "text": "DoD: npm run build compiles with no errors or warnings",
-          "completed": false
+          "completed": true
         }
       ]
     },

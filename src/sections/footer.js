@@ -52,7 +52,7 @@ export function createFooter() {
   const inner = createEl("div", { className: "container footer__inner" });
   const top = createEl("div", { className: "footer__top" });
 
-  top.appendChild(createLogo({ className: "footer__logo" }));
+  top.appendChild(createLogo({ className: "footer__logo", light: true }));
   top.appendChild(createNav());
 
   inner.appendChild(top);
