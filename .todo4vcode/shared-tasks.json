@@ -125,8 +125,8 @@
         "phase-1"
       ],
       "priority": "Must",
-      "status": "Testing",
-      "completed": false,
+      "status": "Done",
+      "completed": true,
       "createdAt": 1794226524050,
       "order": 4000,
       "subtasks": [
@@ -165,7 +165,7 @@
         "phase-1"
       ],
       "priority": "Must",
-      "status": "Todo",
+      "status": "Testing",
       "completed": false,
       "createdAt": 1794226524050,
       "order": 5000,
@@ -173,27 +173,27 @@
         {
           "id": "T-05-d1",
           "text": "DoD: Young Serif, Instrument Sans 400/500/600 and IBM Plex Mono 400 load as local woff2",
-          "completed": false
+          "completed": true
         },
         {
           "id": "T-05-d2",
           "text": "DoD: Every @font-face uses font-display: swap",
-          "completed": false
+          "completed": true
         },
         {
           "id": "T-05-d3",
           "text": "DoD: No requests go to Google Fonts",
-          "completed": false
+          "completed": true
         },
         {
           "id": "T-05-d4",
           "text": "DoD: å ä ö render correctly in each family",
-          "completed": false
+          "completed": true
         },
         {
           "id": "T-05-d5",
           "text": "DoD: npm run build compiles with no errors or warnings",
-          "completed": false
+          "completed": true
         }
       ]
     },

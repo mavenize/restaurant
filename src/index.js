@@ -1,4 +1,5 @@
 import "./styles/tokens.css";
+import "./styles/fonts.css";
 import "./styles/base.css";
 import { createEl } from "./utils/dom.js";
 import { createHeader } from "./sections/header.js";
