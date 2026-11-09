@@ -825,8 +825,8 @@
         "phase-3"
       ],
       "priority": "Should",
-      "status": "Testing",
-      "completed": false,
+      "status": "Done",
+      "completed": true,
       "createdAt": 1794226524050,
       "order": 23000,
       "subtasks": [
