@@ -2,7 +2,7 @@
   "name": "restaurant",
   "version": "1.0.0",
   "scripts": {
-    "dev": "webpack serve --mode development",
+    "dev": "webpack serve --mode production",
     "build": "webpack --mode production"
   },
   "repository": {
